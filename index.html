@@ -5,19 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mintlify - The Intelligent Documentation Platform</title>
+  <meta name="description"
+    content="Helping teams create and maintain world-class documentation built for both humans and AI.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo">
         <a href="/">
-          <img src="assets/logo.svg" alt="Mintlify Logo">
+          <img src="assets/logo.svg" alt="Mintlify Logo" class="logo-light" />
+          <img src="assets/logo-dark.svg" alt="Mintlify Logo" class="logo-dark" />
         </a>
       </div>
       <nav class="nav-links">
@@ -28,7 +31,7 @@
         <a href="#">Pricing</a>
       </nav>
       <div class="nav-cta">
-        <a href="#" class="btn-text">Contact sales</a>
+        <a href="#" class="btn-text sales-btn">Contact sales</a>
         <a href="#" class="btn btn-submit">Start for free</a>
       </div>
     </div>
@@ -42,7 +45,8 @@
       <div class="container hero-container">
         <div class="hero-content">
           <h1 class="hero-title">The Intelligent<br>Knowledge Platform</h1>
-          <p class="hero-subtitle">Helping teams create and maintain world-class documentation.</p>
+          <p class="hero-subtitle">Helping teams create and maintain world-class documentation built for both humans and
+            AI</p>
 
           <div class="hero-form">
             <form action="#" class="email-form">
@@ -50,7 +54,7 @@
               <button type="submit" class="btn btn-submit">Start now</button>
             </form>
           </div>
-          <p class="hero-note">Backed by Y Combinator</p>
+
         </div>
         <div class="hero-image">
           <img src="assets/hero-image-light.svg" alt="Mintlify Interface" class="hero-img">
@@ -60,16 +64,25 @@
 
     <section class="social-proof">
       <div class="container">
-        <p class="social-proof-text">Trusted by thousands of startups and enterprises</p>
         <div class="logo-cloud">
-          <img src="assets/anthropic.svg" alt="Anthropic" class="logo-item" style="height: 28px;">
-          <img src="assets/coinbase.svg" alt="Coinbase" class="logo-item" style="height: 26px;">
-          <img src="assets/microsoft.svg" alt="Microsoft" class="logo-item" style="height: 26px;">
-          <img src="assets/perplexity.png" alt="Perplexity" class="logo-item" style="height: 28px;">
-          <img src="assets/hubspot.png" alt="HubSpot" class="logo-item" style="height: 28px;">
-          <img src="assets/x.png" alt="X" class="logo-item" style="height: 26px;">
-          <img src="assets/paypal.png" alt="PayPal" class="logo-item" style="height: 28px;">
-          <img src="assets/lovable.png" alt="Lovable" class="logo-item" style="height: 28px;">
+          <img src="assets/download/anthropic-text.svg" alt="Anthropic" class="logo-item" style="height: 14px;">
+          <div style="display: flex; align-items: center; justify-content: center;">
+            <img src="assets/download/microsoft-color.svg" alt="Microsoft" class="logo-item" style="height: 22px;">
+            <img src="assets/download/microsoft-text.svg" alt="Microsoft" class="logo-item" style="height: 22px;">
+          </div>
+          <div style="display: flex; align-items: center;">
+            <img src="assets/download/perplexity-color.svg" alt="Perplexity" class="logo-item" style="height: 22px;">
+            <img src="assets/download/perplexity-text.svg" alt="Perplexity" class="logo-item" style="height: 22px;">
+          </div>
+          <div style="display: flex; align-items: center;">
+            <img src="assets/download/notion.svg" alt="Perplexity" class="logo-item" style="height: 22px;">
+            <img src="assets/download/notion-text.svg" alt="Perplexity" class="logo-item" style="height: 22px;">
+          </div>
+          <div style="display: flex; align-items: center;">
+            <img src="assets/download/lovable-color.svg" alt="Perplexity" class="logo-item" style="height: 22px;">
+            <img src="assets/download/lovable-text.svg" alt="Perplexity" class="logo-item" style="height: 22px;">
+          </div>
+          
         </div>
       </div>
     </section>
@@ -77,31 +90,35 @@
     <section class="features">
       <div class="container">
         <h2 class="section-title">Built for the intelligence age</h2>
+        <p class="section-subtitle">Integrate AI into every part of your docs lifecycle. Woven into how your knowledge
+          is written, maintained, and understood by both users and LLMs.</p>
 
         <div class="bento-grid">
-          <!-- Card 1: LLMs.txt & MCP -->
-          <div class="feature-card card-large">
+          <div class="feature-card card-half">
             <div class="card-content">
-              <div class="card-label">LLMs.txt & MCP</div>
+              <div class="card-label">LLMS.TXT &amp; MCP</div>
               <h3>Built for both people and AI</h3>
               <p>Ensure your product shows up in the AI workflows users already rely on. We support llms.txt, MCP, and
                 whatever comes next.</p>
             </div>
-            <!-- Visual placeholder: Mimicking the code/workflow visualization -->
-            <div class="card-visual visual-code">
-              <svg width="240" height="150" viewBox="0 0 400 200" fill="none" class="placeholder-svg">
-                <rect x="40" y="40" width="320" height="120" rx="8" fill="#F1F5F9" stroke="#E2E8F0" />
-                <circle cx="60" cy="60" r="6" fill="#CBD5E1" />
-                <circle cx="80" cy="60" r="6" fill="#CBD5E1" />
-                <circle cx="100" cy="60" r="6" fill="#CBD5E1" />
-                <rect x="60" y="90" width="200" height="10" rx="2" fill="#E2E8F0" />
-                <rect x="60" y="110" width="160" height="10" rx="2" fill="#E2E8F0" />
-                <rect x="60" y="130" width="180" height="10" rx="2" fill="#E2E8F0" />
+            <div class="card-visual visual-llm">
+              <svg width="220" height="140" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="20" width="240" height="120" rx="12" fill="#f0fdf4" stroke="#bbf7d0"
+                  stroke-width="1.5" />
+                <rect x="36" y="36" width="120" height="10" rx="5" fill="#86efac" />
+                <rect x="36" y="54" width="180" height="8" rx="4" fill="#dcfce7" />
+                <rect x="36" y="68" width="150" height="8" rx="4" fill="#dcfce7" />
+                <rect x="36" y="82" width="170" height="8" rx="4" fill="#dcfce7" />
+                <rect x="36" y="100" width="80" height="28" rx="14" fill="#16a34a" />
+                <rect x="128" y="100" width="80" height="28" rx="14" fill="#f1f5f9" stroke="#e2e8f0" />
+                <text x="76" y="119" font-size="10" fill="white" text-anchor="middle"
+                  font-family="monospace">llms.txt</text>
+                <text x="168" y="119" font-size="10" fill="#64748b" text-anchor="middle"
+                  font-family="monospace">MCP</text>
               </svg>
             </div>
           </div>
 
-          <!-- Card 2: AGENT -->
           <div class="feature-card card-half">
             <div class="card-content">
               <div class="card-label">AGENT</div>
@@ -110,103 +127,271 @@
                 the documentation debt.</p>
             </div>
             <div class="card-visual visual-agent">
-              <svg width="120" height="120" viewBox="0 0 200 150" fill="none" class="placeholder-svg">
-                <circle cx="100" cy="75" r="40" fill="#DCFCE7" stroke="#86EFAC" stroke-width="2" />
-                <path d="M85 75L95 85L115 65" stroke="#16A34A" stroke-width="4" stroke-linecap="round"
+              <svg width="200" height="140" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="80" r="28" fill="#0c8c5e" />
+                <path d="M48 80L57 89L73 71" stroke="#fff" stroke-width="3" stroke-linecap="round"
                   stroke-linejoin="round" />
+                <circle cx="130" cy="80" r="28" fill="#0c8c5e" />
+                <path d="M118 80L127 89L143 71" stroke="#fff" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="200" cy="80" r="28" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2" />
+                <image href="assets/star.svg" width="32%" height="32%" x="162" y="54"/>
               </svg>
             </div>
           </div>
 
-          <!-- Card 3: ASSISTANT -->
-          <div class="feature-card card-half">
-            <div class="card-content">
+          <div class="feature-card card-full-light">
+            <div class="card-content card-content-center">
               <div class="card-label">ASSISTANT</div>
               <h3>Intelligent assistance for your users</h3>
               <p>Turn every documentation visit into a guided conversation. Your AI assistant understands context and
                 delivers what users need.</p>
             </div>
-            <div class="card-visual visual-assistant">
-              <svg width="120" height="120" viewBox="0 0 200 150" fill="none" class="placeholder-svg">
-                <rect x="40" y="40" width="120" height="80" rx="8" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="2" />
-                <circle cx="100" cy="80" r="15" fill="#38BDF8" />
-              </svg>
-            </div>
-          </div>
-
-          <!-- Card 4: Enterprise -->
-          <div class="feature-card card-full card-dark">
-            <div class="card-content">
-              <div class="card-label">ENTERPRISE</div>
-              <h3>Bring intelligence to enterprise knowledge</h3>
-              <p>Modernize without the rebuild with enterprise-grade professional service & security.</p>
-              <a href="#" class="btn-link">Explore for enterprise &rarr;</a>
+            <div class="card-visual visual-assistant-wide">
+              <div class="assistant-grid-mock">
+                <div class="mock-panel mock-panel-left">
+                  <div class="mock-tag">&#9632; QUICK START GUIDE</div>
+                  <div class="mock-line mock-line-long"></div>
+                  <div class="mock-line mock-line-med"></div>
+                  <div class="mock-tag mock-tag-sm">&#9658; MCP SERVER</div>
+                  <div class="mock-line mock-line-long"></div>
+                  <div class="mock-tag mock-tag-sm">&#9632; UPDATES</div>
+                  <div class="mock-line mock-line-med"></div>
+                  <div class="mock-line mock-line-short"></div>
+                </div>
+                <div class="mock-panel mock-panel-center">
+                  <div class="mock-ask-ai">Ask AI anything&hellip; <span class="mock-ai-icon">&#10022;</span></div>
+                </div>
+                <div class="mock-panel mock-panel-right">
+                  <div class="mock-tag">&#9632; API REFERENCE</div>
+                  <div class="mock-line mock-line-long"></div>
+                  <div class="mock-line mock-line-med"></div>
+                  <div class="mock-line mock-line-short"></div>
+                  <div class="mock-tag mock-tag-sm">&#9632; INSIGHTS</div>
+                  <div class="mock-line mock-line-long"></div>
+                  <div class="mock-line mock-line-med"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="enterprise">
+      <div class="container">
+        <div class="enterprise-header">
+          <div class="enterprise-header-left">
+            <div class="card-label">ENTERPRISE-REINVENTION</div>
+            <h2 class="enterprise-title">Bring intelligence to<br>enterprise knowledge</h2>
+            <p class="enterprise-subtitle">Modernize without the rebuild with enterprise-grade professional service
+              &amp; security.</p>
+          </div>
+          <div class="enterprise-header-right">
+            <a href="#" class="btn btn-dark">Explore for enterprise</a>
+          </div>
+        </div>
+
+        <div class="enterprise-features">
+          <div class="enterprise-feature">
+            <div class="enterprise-icon">
+              <img src="assets/circle.svg" alt="">
+            </div>
+            <h4>Build with partnership</h4>
+            <p>Direct, white-glove access to our documentation experts. Dedicated migration support and guidance
+              tailored to your setup, and elevated support SLAs.</p>
+          </div>
+          <div class="enterprise-feature">
+            <div class="enterprise-icon">
+              <img src="assets/key.svg" alt="">
+            </div>
+            <h4>Compliance and access control</h4>
+            <p>Compliant with SOC 2, and in the process for ISO/27001 and GDPR compliance to meet your internal and
+              external data requirements. Secure access and provisioning with SAML-based SSO.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-story-section">
+      <div class="container">
+        <div class="customer-story-card">
+          <div class="customer-story-content">
+            <div class="card-label card-label-light">CUSTOMER STORY</div>
+            <h2 class="customer-story-title">See how Anthropic accelerates AI development with Mintlify</h2>
+            <a href="#" class="customer-story-link">Read story &rarr;</a>
+            <div class="customer-story-stats">
+              <div class="stat">
+                <span class="stat-number">2M+</span>
+                <span class="stat-label">Monthly visitors</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years with Mintlify</span>
+              </div>
+            </div>
+          </div>
+          <div class="customer-story-visual">
+            <svg width="300" height="280" viewBox="0 0 300 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1e3a5f" />
+                  <stop offset="100%" stop-color="#2d6a8f" />
+                </linearGradient>
+                <linearGradient id="mountainGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1a4a6b" />
+                  <stop offset="100%" stop-color="#0f2d45" />
+                </linearGradient>
+                <linearGradient id="archGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#f59e0b" />
+                  <stop offset="100%" stop-color="#d97706" />
+                </linearGradient>
+              </defs>
+              <rect width="300" height="280" rx="12" fill="url(#skyGrad)" />
+              <polygon points="0,200 80,120 160,180 240,100 300,160 300,280 0,280" fill="url(#mountainGrad)"
+                opacity="0.8" />
+              <polygon points="0,220 60,160 120,200 200,130 300,190 300,280 0,280" fill="#0f2d45" opacity="0.9" />
+              <!-- Arch -->
+              <path d="M140 280 L140 140 Q140 80 180 80 Q220 80 220 140 L220 280" fill="url(#archGrad)" stroke="#f59e0b"
+                stroke-width="2" />
+              <path d="M155 280 L155 148 Q155 95 180 95 Q205 95 205 148 L205 280" fill="#1e3a5f" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="winning-advantage">
+      <div class="container">
+        <h2 class="section-title">Make documentation<br>your winning advantage</h2>
+        <p class="section-subtitle">
+          Join the leaders of tomorrow to future proof your documentation today.
+        </p>
+        <div class="bottom-cta">
+          <a href="#" class="btn btn-primary">Get started for free</a>
+          <a href="#" class="btn btn-secondary">Get a demo</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="dual-cta">
+      <div class="container">
+        <div class="dual-cta-grid">
+          <div class="cta-card">
+            <div class="cta-icon">
+              <img src="assets/price.svg" height="32" width="32" alt="">
+            </div>
+            <h3>Pricing on your terms</h3>
+            <p>Pick the plan that works best for you</p>
+            <a href="#" class="cta-link">Pricing details &rarr;</a>
+          </div>
+          <div class="cta-card-divider"></div>
+          <div class="cta-card">
+            <div class="cta-icon">
+              <img src="assets/start.svg" height="32" width="32" alt="">
+            </div>
+            <h3>Start building</h3>
+            <p>Deploy your documentation in minutes</p>
+            <a href="#" class="cta-link">Quickstart &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-col footer-brand">
-        <!-- Reusing Logo SVG -->
-        <svg fill="none" class="h-6 w-auto" width="138" height="28" viewBox="0 0 138 28"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M10.1501 27.6896C5.52515 27.6896 1.7439 25.1083 1.7439 19.3458V11.2271H10.1501V19.0646C10.1501 20.3771 10.9939 21.0802 12.1658 21.0802H13.622V27.4208H12.9189C11.9689 27.5958 11.0626 27.6896 10.1501 27.6896Z"
-            fill="#0F172A" />
-          <path
-            d="M19.1039 6.22083C19.1039 3.84166 21.0726 1.90833 23.4976 1.90833C25.9226 1.90833 27.8914 3.84166 27.8914 6.22083C27.8914 8.59999 25.9226 10.5333 23.4976 10.5333C21.0726 10.5333 19.1039 8.59999 19.1039 6.22083ZM19.2914 27.3999V12.1999H27.7039V27.3999H19.2914Z"
-            fill="#0F172A" />
-          <path
-            d="M51.2725 11.2396C46.8662 11.2396 43.1162 13.9083 42.1787 18.0687V12.1999H33.7725V27.3999H42.1787V19.8999C42.1787 18.5874 43.0225 17.8843 44.1943 17.8843H45.6475V11.5437H44.9443C43.9943 11.3687 43.0881 11.2749 51.2725 11.2396Z"
-            fill="#0F172A" />
-          <path
-            d="M56.3351 24.3999C56.3351 26.2166 57.7038 27.6895 59.3913 27.6895H60.8445V21.3499H60.1413C58.8288 21.3499 56.3351 22.0999 56.3351 24.3999ZM64.6476 12.1999H56.3351V15.6583H64.6351C64.3851 16.5958 64.2538 17.5812 64.2538 18.6187V27.3999H63.6601H62.5976H59.3913C53.0538 27.3999 49.3038 23.1812 49.3038 18.5874V6.75621V5.70205V1.9083H56.3351V6.75621V11.227L60.8445 11.2395V12.1999H64.6476Z"
-            fill="#0F172A" />
-          <path d="M68.5851 0.310364H76.9913V27.3999H68.5851V0.310364Z" fill="#0F172A" />
-          <path
-            d="M82.8038 6.22083C82.8038 3.84166 84.7726 1.90833 87.1976 1.90833C89.6226 1.90833 91.5913 3.84166 91.5913 6.22083C91.5913 8.59999 89.6226 10.5333 87.1976 10.5333C84.7726 10.5333 82.8038 8.59999 82.8038 6.22083ZM82.9913 27.3999V12.1999H91.4038V27.3999H82.9913Z"
-            fill="#0F172A" />
-          <path
-            d="M102.348 6.75621H95.3168V1.9083H102.348V6.75621ZM113.91 0.441613C110.154 0.441613 107.035 1.7687 105.029 4.09995V1.91036H96.6166V27.402H105.029V27.3999V14.5458C105.029 11.9687 106.998 10.0583 109.435 10.0583H110.888V3.7187H110.185C109.185 3.7187 108.185 3.85828 107.248 4.12703C107.716 3.00203 108.279 2.14578 108.935 1.58328C110.185 0.504113 111.935 -0.0104702 113.904 4.881e-05L113.91 0.441613Z"
-            fill="#0F172A" />
-          <path
-            d="M126.941 12.1999L122.398 25.1083L117.854 12.1999H109.435L118.248 35.8499C119.335 38.8916 122.28 39.0207 122.398 39.0207C122.56 39.0207 125.504 38.8916 126.541 35.8499L135.354 12.1999H126.941Z"
-            fill="#0F172A" />
-        </svg>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <img src="assets/logo-dark.svg" alt="Mintlify" style="height: 24px; width: auto;">
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="X (Twitter)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Product</h4>
-        <ul>
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Enterprise</a></li>
-          <li><a href="#">Changelog</a></li>
-        </ul>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Startups</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Switch</a></li>
+            <li><a href="#">OSS Program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Feature Requests</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="#">Getting Started</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Wall of Love</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Responsible Disclosure</a></li>
+            <li><a href="#">Terms Of Service</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">DSR/DSAR</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Customers</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Security</a></li>
-          <li><a href="#">Privacy</a></li>
-        </ul>
+
+      <div class="footer-bottom">
+        <div class="footer-status">
+          <span class="status-dot"></span>
+          <span>All systems normal</span>
+        </div>
+        <p class="footer-copy">&copy; 2026 Mintlify, Inc.</p>
+        <div class="theme-switcher">
+          <img src="assets/image.png" alt="" style="width: auto; height: 32px;" />
+        </div>
       </div>
     </div>
   </footer>
+
 
 </body>
 
